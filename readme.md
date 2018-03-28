@@ -29,7 +29,7 @@ from sklearn.metrics import recall_score, f1_score
 ```
     
   2. Load the amazon review dataset that can be found [here](https://www.kaggle.com/snap/amazon-fine-food-reviews/downloads/Reviews.csv/2)
-  3. Create to seperate dataframes that contain reviews that have a score >3 (positive) and score < 3 (negative). You can assume that a score of 3 is netural.
+  3. Create to seperate dataframes that contain reviews that have a score >3 (positive) and score < 3 (negative). You can assume that a score of 3 is neutral.
   4. Join the two dataframes and shuffle the contents
   5. Create a training set and a test set using:
   		1. Text for the training data
