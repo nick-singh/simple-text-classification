@@ -2,7 +2,7 @@
 
 1. Import the necessary libraries 
 
-```
+```Python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -73,7 +73,7 @@ from sklearn.metrics import recall_score, f1_score
 		3. Logistic regression model on TFIDF + ngram
 
   9. The next component would be to determine what are the general topics that the reviews were based on. Copy the following function to continue with the exercise
-  ```
+  ```Python
   def display_topics(H, W, feature_names, documents, no_top_words, no_top_documents):
     for topic_idx, topic in enumerate(H):
         print "Topic %d:" % (topic_idx)
@@ -92,7 +92,7 @@ from sklearn.metrics import recall_score, f1_score
   		3. [SVD](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html). 
 
 Using the following initializations for both vectorizers 
-```
+```Python
 tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=2, stop_words='english')
 tfidf = tfidf_vectorizer.fit_transform(documents)
 tfidf_feature_names = tfidf_vectorizer.get_feature_names()
@@ -105,8 +105,8 @@ tf_feature_names = tf_vectorizer.get_feature_names()
   		
   11. Using the function from 9, for each topic model display the top 10 words and the top 4 documents
   12. Finally create a word cloud of all the words used.
-  ```
-  install the following package: pip install wordcloud
+  ```Python
+  #install the following package: pip install wordcloud
   
   #use the following function:
   
@@ -160,6 +160,7 @@ We created a function that takes in the training set `X` , test set `y`, the mod
 
 NGram Defn:
 N-grams of texts are extensively used in text mining and natural language processing tasks. They are basically a set of co-occuring words within a given window and when computing the n-grams you typically move one word forward (although you can move X words forward in more advanced scenarios). Taken from [here](http://text-analytics101.rxnlp.com/2014/11/what-are-n-grams.html)
+
 ---
 
 ## Topic Modelling
